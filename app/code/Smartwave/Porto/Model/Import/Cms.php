@@ -71,7 +71,6 @@ class Cms
         }
         ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug('*********************************************************');
         ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug($type);
-        ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug($demo_version);
         ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug($file_name);
         $this->importCmsByFileMame($type, $file_name, $demo_version);
     }
@@ -108,7 +107,6 @@ class Cms
             }
             $data = $this->_parser->load($xmlPath)->xmlToArray();
             $cms_data = $this->_parser->load($demoCMSxmlPath)->xmlToArray();
-            ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("load xml success");
             $arr = array();
             if($demo_version != "0") {
                 foreach($cms_data['root']['demos'][$demo_version][$type]['item'] as $item) {
@@ -123,35 +121,6 @@ class Cms
             }
             $cms_collection = null;
             $conflictingOldItems = array();
-            if (array_key_exists('root', $data)) {
-                ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("root key exist");
-                if (array_key_exists($type, $data['root'])) {
-                    ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("key exist".$type);
-                    if (array_key_exists('cms_item', $data['root'][$type])) {
-                        ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("key exist cms_item ");
-                        if (is_array($data['root'][$type]['cms_item'])) {
-                            ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug(" cms_item is array ");
-                            foreach ($data['root'][$type]['cms_item'] as $key => $value) {
-                                ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug($key);
-                            }
-                        }
-                        foreach ($data['root'][$type]['cms_item'] as $_item) {
-                            if (array_key_exists('identifier', $_item)) {
-                                ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("key exist identifier ");
-                            } else {
-                                ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("key not exist identifier ");
-                            }
-                        }
-                    } else {
-                        ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("key not exist cms_item ");
-                    }
-                } else {
-                    ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("key not exist".$type);
-                }
-            } else {
-                ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("root key not exist");
-            }
-
             $i = 0;
             foreach($data['root'][$type]['cms_item'] as $_item) {
                 $exist = false;

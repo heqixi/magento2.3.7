@@ -473,6 +473,7 @@
             <page_layout>1column</page_layout>
             <layout_update_xml><![CDATA[]]></layout_update_xml>
         </cms_item>
+<<<<<<< HEAD
         <cms_item>
             <title>Porto - Homepage 1</title>
             <identifier>porto_home_1</identifier>
@@ -1204,5 +1205,7 @@
             <is_active>1</is_active>
             <page_layout>1column</page_layout>
         </cms_item>
+=======
+>>>>>>> 1f141d30cc9db307bcccb00af7196e34098e4768
     </pages>
 </root>
