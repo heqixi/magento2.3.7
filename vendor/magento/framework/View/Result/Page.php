@@ -9,6 +9,7 @@ namespace Magento\Framework\View\Result;
 use Magento\Framework;
 use Magento\Framework\App\Response\HttpInterface as HttpResponseInterface;
 use Magento\Framework\View;
+use Magento\Framework\App\ObjectManager;
 
 /**
  * A "page" result that encapsulates page type, page configuration
@@ -256,6 +257,7 @@ class Page extends Layout
             ]);
 
             $output = $this->getLayout()->getOutput();
+            ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("render layoutContent".$output);
             $this->assign('layoutContent', $output);
             $output = $this->renderPage();
             $this->translateInline->processResponseBody($output);
@@ -322,6 +324,7 @@ class Page extends Layout
         }
 
         ob_start();
+        ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("renderPage fileName".$fileName);
         try {
             extract($this->viewVars, EXTR_SKIP);
             include $fileName;
@@ -330,6 +333,7 @@ class Page extends Layout
             throw $exception;
         }
         $output = ob_get_clean();
+        ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("renderPage output".$fileName);
         return $output;
     }
 

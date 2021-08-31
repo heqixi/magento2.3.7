@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <link src="Suprigou_Theme::js/jquery-1.11.3.min.js"/>
+        <css src="Suprigou_Theme::css/bootstrap.min.css"/>
+        <link src="Suprigou_Theme::js/bootstrap.min.js"/>
+        <css src="Suprigou_Header::css/header.css"/>
+        <css src="Suprigou_Header::js/header.js"/>
+    </head>
+    <body>
+        <referenceContainer name="suprigou.frontend.header">
+            <container name="suprigou.frontend.header.all" label="Page header All" htmlTag="div" htmlClass="suprigou_header">
+                <!--
+                <block name="suprigou.frontend.header.logo" template="Suprigou_Header::logo.phtml">
+                    <arguments>
+                        <argument name="logo_src" xsi:type="string">images/my_logo2.jpg</argument>
+                    </arguments>
+                </block>
+                -->
+                <container name="suprigou.frontend.header.middle" label="Page footer" htmlTag="div" htmlClass="row">
+                    <block class="Magento\Framework\View\Element\Template" name="navigation.sections" before="-" template="Magento_Theme::html/sections.phtml">
+                        <arguments>
+                            <argument name="group_name" xsi:type="string">navigation-sections</argument>
+                            <argument name="group_css" xsi:type="string">nav-sections</argument>
+                        </arguments>
+                        <block class="Magento\Framework\View\Element\Template" name="store.menu" group="navigation-sections" template="Magento_Theme::html/container.phtml">
+                            <arguments>
+                                <argument name="title" translate="true" xsi:type="string">Menu</argument>
+                            </arguments>
+                            <block class="Magento\Theme\Block\Html\Topmenu" name="catalog.topnav" template="Magento_Theme::html/topmenu.phtml" ttl="3600" before="-"/>
+                        </block>
+                    </block>
+                    <!-- <block name="suprigou.frontend.header.domain" template="Suprigou_Header::domain.phtml"/> -->
+                </container>
+                <!-- <block name="suprigou.frontend.header.login" template="Suprigou_Header::login.phtml"/> -->
+            </container>
+        </referenceContainer>
+    </body>
+</page>

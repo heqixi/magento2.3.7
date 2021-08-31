@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <link src="Suprigou_Theme::js/jquery-1.11.3.min.js"/>
+        <css src="Suprigou_Theme::css/bootstrap.min.css"/>
+        <link src="Suprigou_Theme::js/bootstrap.min.js"/>
+        <link src="Suprigou_Main::js/home.js"/>
+        <css src="Suprigou_Main::css/home.css"/>
+    </head>
+    <body>
+        <referenceContainer name="suprigou.frontend.main" label="Page main" htmlTag="div" htmlClass="row">
+            <block name="suprigou.frontend.main.home" template="Suprigou_Main::home.phtml"></block>
+        </referenceContainer>
+    </body>
+</page>

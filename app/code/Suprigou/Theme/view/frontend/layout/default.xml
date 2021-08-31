@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.container" remove="true"/>
+        <referenceContainer name="page.top" remove="true"/>
+        <referenceContainer name="main.content" remove="true"/>
+        <referenceContainer name="top.container" remove="true"/>
+        <referenceContainer name="main" remove="true"/>
+        <referenceContainer name="footer-container" remove="true"/>
+        <referenceBlock name="copyright" remove="true"/>
+        <referenceContainer name="page.wrapper" htmlClass="container-fluid">
+            <container name="suprigou.frontend.header" label="Page header" htmlTag="div" htmlClass="row"></container>
+            <container name="suprigou.frontend.main" label="Page main" htmlTag="div" htmlClass="row"></container>
+            <container name="suprigou.frontend.footer" label="Page footer" htmlTag="div" htmlClass="row"></container>
+        </referenceContainer>
+    </body>
+</page>

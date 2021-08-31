@@ -7,6 +7,7 @@ namespace Magento\Framework\View\Element;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
 use Magento\Framework\Filesystem;
+use Magento\Framework\App\ObjectManager;
 
 /**
  * Standard Magento block.
@@ -264,7 +265,7 @@ class Template extends AbstractBlock
             'TEMPLATE:' . $fileName,
             ['group' => 'TEMPLATE', 'file_name' => $relativeFilePath]
         );
-
+        ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("fetchView ***".$fileName);
         if ($this->validator->isValid($fileName)) {
             $extension = pathinfo($fileName, PATHINFO_EXTENSION);
             $templateEngine = $this->templateEnginePool->get($extension);
@@ -272,6 +273,8 @@ class Template extends AbstractBlock
         } else {
             $html = '';
             $templatePath = $fileName ?: $this->getTemplate();
+            ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("fetchView fail". $fileName);
+            ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("fetchView fail". $templatePath);
             $errorMessage = "Invalid template file: '{$templatePath}' in module: '{$this->getModuleName()}'"
                 . " block's name: '{$this->getNameInLayout()}'";
             if ($this->_appState->getMode() === \Magento\Framework\App\State::MODE_DEVELOPER) {

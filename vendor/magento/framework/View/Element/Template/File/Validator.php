@@ -8,6 +8,7 @@ namespace Magento\Framework\View\Element\Template\File;
 use \Magento\Framework\App\Filesystem\DirectoryList;
 use Magento\Framework\Component\ComponentRegistrar;
 use \Magento\Framework\Filesystem\Driver\File as FileDriver;
+use Magento\Framework\App\ObjectManager;
 
 /**
  * Class Validator
@@ -111,8 +112,10 @@ class Validator
      */
     public function isValid($filename)
     {
+
         $filename = str_replace('\\', '/', $filename);
         if (!isset($this->_templatesValidationResults[$filename])) {
+            ObjectManager::getInstance()->get(\Psr\Log\LoggerInterface::class)->debug("tesing file ".$filename);
             $this->_templatesValidationResults[$filename] =
                 ($this->isPathInDirectories($filename, $this->_compiledDir)
                     || $this->isPathInDirectories($filename, $this->moduleDirs)

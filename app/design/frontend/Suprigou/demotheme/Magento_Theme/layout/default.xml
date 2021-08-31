@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer" remove="true"/>
+        <referenceBlock name="report.bugs" remove="true"/>
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+        <referenceBlock name="wishlist_sidebar" remove="true"/>
+        <referenceContainer name="header.container" remove="true"/>
+        <referenceContainer name="main" remove="true"/>
+        <referenceContainer name="page.top" remove="true"/>
+        <container name="header-container">
+            <block class="Magento\Framework\View\Element\Template" name="header" template="html/myheader.phtml" before="-"/>
+        </container>
+        <container name="main-container">
+            <block class="Magento\Framework\View\Element\Template" name="mainContent" template="html/mymain.phtml"/>
+        </container>
+        <container name="footer-container">
+            <block class="Magento\Framework\View\Element\Template" name="footer" template="html/myfooter.phtml"/>
+        </container>
+    </body>
+</page>

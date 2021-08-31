@@ -1,0 +1,1208 @@
+<root>
+    <pages>
+        <cms_item>
+            <title>Underware</title>
+            <identifier>underware</identifier>
+            <content><![CDATA[<style>
+  .cms-index-index .page-main {
+    padding: 0;
+  }
+  .columns .column.main {
+    padding-bottom: 0;
+  }
+  .fullscreen-carousel {
+    height: 100vh;
+    position: relative;
+  }
+  .fullscreen-carousel .porto-ibanner img {
+    height: 100%;
+    object-position: center top;
+  }
+  .porto-ibanner-layer {
+    position: absolute;
+    z-index: 10;
+  }
+  .coupon-sale-text {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    transform: none;
+    letter-spacing: 0;
+  }
+  .coupon-sale-text:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #fff;
+    transform: rotate(
+      -2deg
+    );
+  }
+  .coupon-sale-text sup {
+    font-size: 55%;
+  }
+  .vertical-font {
+    position: relative;
+    padding-left: .3em;
+  }
+  .vertical-font small {
+    font-size: 25%;
+    font-weight: 500;
+    transform: translateY(-50%) rotate(
+      -90deg
+    );
+    transform-origin: 50% 50%;
+    position: absolute;
+    left: -1em;
+    top: 50%;
+    color: inherit;
+    font-family: inherit;
+  }
+  .porto-separator.short {
+    margin: -11px 0 11px;
+  }
+  .divider {
+    border: 0;
+    height: 1px;
+    position: relative;
+    clear: both;
+  }
+  .divider.divider-small {
+    margin: 22px auto;
+    background: transparent;
+  }
+  .divider.divider-small hr {
+    background: #555;
+    width: 50px;
+    margin: 22px 0;
+  }
+  .porto-ibanner em {
+    font-size: 2em;
+    font-style: normal;
+    font-family: inherit;
+    vertical-align: text-bottom;
+  }
+</style>
+<div class="row home-slider no-padding">
+  <div class="col-md-12">
+    <div class="fullscreen-carousel">
+      <div id="banner-slider-demo-3" class="porto-carousel owl-carousel mb-0 nav-pos-inside nav-style-4 show-nav-hover">
+        <div class="porto-ibanner" style="">
+          <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/shop3_banner1.jpg&quot;}}"/>
+          <div class="porto-ibanner-desc no-padding d-flex">
+            <div class="container">
+              <div class="porto-ibanner-container">
+                <div class="porto-ibanner-layer" style="left: 10%; top: 50%; transform: translateY(-50%);">
+                  <h2 style="font-size: 2.5em; color: #777777; line-height: 1; font-weight: 400;" class="vc_custom_heading custom-font4 mb-3 align-left">Winter Fashion Trends</h2>
+                  <h3 style="font-size: 2.5em; line-height: 1;" class="vc_custom_heading mb-0 ls-185 align-left text-uppercase">get up to 30% off</h3>
+                  <h3 style="font-size: 5.625em; line-height: 1;" class="vc_custom_heading mb-4 align-left">on Jackets</h3>
+                  <h5 style="font-size: 1.125em;" class="vc_custom_heading pull-left p-t-sm mr-3 align-left text-uppercase">Starting At</h5>
+                  <h5 style="font-size: 2.25em; line-height: 1;" class="vc_custom_heading coupon-sale-text mb-4 align-left"><sup>$</sup>199<sup>99</sup></h5>
+                  <div class="btn-container mb-0 mt-2 text-left"><button class="btn btn-modern btn-xl btn-dark">Shop Now</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="porto-ibanner" style="">
+          <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/shop3_banner2.jpg&quot;}}"/>
+          <div class="porto-ibanner-desc no-padding d-flex">
+            <div class="container">
+              <div class="porto-ibanner-container">
+                <div class="porto-ibanner-layer" style="left: 10%; top: 50%; transform: translateY(-50%);">
+                  <h2 style="font-size: 3.4375em; line-height: 1;" class="vc_custom_heading custom-font4 mb-1 align-left">New Season Hats</h2>
+                  <h3 style="font-size: 7em; line-height: 1;" class="vc_custom_heading mb-0 vertical-font align-left text-uppercase"><small>UP TO</small>20% OFF</h3>
+                  <div class="porto-separator short mt-2 m-b-n">
+                    <div class="divider divider-small align_left solid"><hr style="background-color: #222529; height: 5px;" /></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="vc_column-inner">
+                        <h5 style="font-size: 1.25em;" class="vc_custom_heading d-inline-block mr-5 align-left text-uppercase">Starting At $<em>19</em>99</h5>
+                        <div class="btn-container mb-0 d-inline-block" style="margin-left: -4px;">
+                          <button class="btn btn-modern btn-xl btn-dark">Shop Now <i style="padding-left: 7px;" class="fas fa-long-arrow-alt-right"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        require(["jquery", "owl.carousel/owl.carousel.min"], function ($) {
+          var owl_3 = $("#banner-slider-demo-3").owlCarousel({
+            items: 1,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            dots: false,
+            navRewind: true,
+            animateIn: "fadeIn",
+            animateOut: "fadeOut",
+            loop: true,
+            nav: true
+          });
+        });
+      </script>
+    </div>
+  </div>
+</div>
+<div class="container" style="padding-top: 65px; padding-bottom: 30px;">
+  <style>
+    ul.products li.product-category .thumb-info h3 {
+      font-size: 1.125rem;
+    }
+    ul.products li.product-category .thumb-info-type {
+      opacity: 1;
+      color: #777;
+    }
+    ul.products li.product-category .thumb-info-wrapper:after {
+      background: rgba(27, 27, 23, 0);
+    }
+    .sub-title {
+      text-transform: uppercase;
+    }
+    .thumb-info .thumb-info-type {
+      font-size: .6em;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+  </style>
+  <div class="porto-products text-center">
+    <h2 class="section-title slider-title mb-4" style="font-size: 1.125rem;line-height: 1.5;text-align: center;letter-spacing: -.3px;">
+      <span class="inline-title">SHOP BY CATEGORY</span>
+      <span class="line"></span>
+    </h2>
+    <div class="slider-wrapper">
+      <ul id="products-category" class="products products-container products-slider owl-carousel category-pos-outside category-text-center category-color-dark nav-pos-outside nav-style-4 show-nav-hover">
+        <li class="product-category product-col">
+          <a href="#">
+            <span class="thumb-info align-center">
+              <span class="thumb-info-wrapper tf-none">
+                <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/product-20.jpg&quot;}}"/>
+              </span>
+              <span class="thumb-info-wrap">
+                <span class="thumb-info-title">
+                  <h3 class="sub-title thumb-info-inner">Accessories</h3>
+                  <span class="thumb-info-type"> <mark class="count">8</mark> Products </span>
+                </span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="product-category product-col">
+          <a href="#">
+            <span class="thumb-info align-center">
+              <span class="thumb-info-wrapper tf-none">
+                <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/product-89-2.jpg&quot;}}"/>
+              </span>
+              <span class="thumb-info-wrap">
+                <span class="thumb-info-title">
+                  <h3 class="sub-title thumb-info-inner">Bags</h3>
+                  <span class="thumb-info-type"> <mark class="count">4</mark> Products </span>
+                </span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="product-category product-col">
+          <a href="#">
+            <span class="thumb-info align-center">
+              <span class="thumb-info-wrapper tf-none">
+                <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/headphone-3.jpg&quot;}}"/>
+              </span>
+              <span class="thumb-info-wrap">
+                <span class="thumb-info-title">
+                  <h3 class="sub-title thumb-info-inner">Electronics</h3>
+                  <span class="thumb-info-type"> <mark class="count">8</mark> Products </span>
+                </span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="product-category product-col">
+          <a href="#">
+            <span class="thumb-info align-center">
+              <span class="thumb-info-wrapper tf-none">
+                <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/product-21.jpg&quot;}}"/>
+              </span>
+              <span class="thumb-info-wrap">
+                <span class="thumb-info-title">
+                  <h3 class="sub-title thumb-info-inner">Fashion</h3>
+                  <span class="thumb-info-type"> <mark class="count">11</mark> Products </span>
+                </span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="product-category product-col">
+          <a href="#">
+            <span class="thumb-info align-center">
+              <span class="thumb-info-wrapper tf-none">
+                <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/headphone-1.jpg&quot;}}"/>
+              </span>
+              <span class="thumb-info-wrap">
+                <span class="thumb-info-title">
+                  <h3 class="sub-title thumb-info-inner">Headphone</h3>
+                  <span class="thumb-info-type"> <mark class="count">3</mark> Products </span>
+                </span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="product-category product-col">
+          <a href="#">
+            <span class="thumb-info align-center">
+              <span class="thumb-info-wrapper tf-none">
+                <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/shoes-16-2.jpg&quot;}}"/>
+              </span>
+              <span class="thumb-info-wrap">
+                <span class="thumb-info-title">
+                  <h3 class="sub-title thumb-info-inner">Shoes</h3>
+                  <span class="thumb-info-type"> <mark class="count">4</mark> Products </span>
+                </span>
+              </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <script type="text/javascript">
+        require([
+          'jquery',
+          'owl.carousel/owl.carousel.min'
+        ], function ($) {
+          $("#products-category").owlCarousel({
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            loop: true,
+            navRewind: true,
+            lazyLoad:true,
+            margin: 0,
+            nav: false,
+            dots: true,
+            responsive: {
+              0: {
+                items:2
+              },
+              640: {
+                items:3
+              },
+              768: {
+                items:3
+              },
+              992: {
+                items:4
+              },
+              1200: {
+                items:6
+              }
+            }
+          });
+        });
+      </script>
+    </div>
+  </div>
+</div>
+<div id="home_ads" class="home-ads mt-0 mb-0" style="padding: 60px 0 40px;background-color: #f4f4f4;">
+  <div class="container">
+    <style scope="scope">
+      .porto-ibanner:hover {
+        box-shadow: 0px 0px 40px 0 rgba(0, 0, 0, 0.08);
+      }
+      .porto-ibanner .btn-modern.btn-sm {
+        padding: 1.3em 2em;
+        letter-spacing: .15em;
+        font-size: .6875em;
+      }
+      .porto-ibe-boxshadow {
+        transition: box-shadow 0.3s;
+      }
+    </style>
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-3 col-12">
+        <div class="wpb_wrapper vc_column-inner">
+          <div class="porto-ibanner porto-ibe-boxshadow">
+            <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/shop3_home_ads1.jpg&quot;}}" class="porto-ibanner-img" />
+            <div class="porto-ibanner-desc no-padding d-flex">
+              <div class="porto-ibanner-layer" style="left: 10%; bottom: 8%;">
+                <h3 style="font-size: 1.625em; line-height: 1;" class="vc_custom_heading mb-2 ls-n-50 align-left">Sunglasses Sale</h3>
+                <p style="font-size: 0.9375em; color: #777777; line-height: 1.4;" class="vc_custom_heading mb-3 align-left">See all and find yours</p>
+                <div class="btn-container mb-0 d-inline-block"><button class="btn btn-modern btn-sm btn-dark">Shop By Glasses</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 col-12">
+        <div class="wpb_wrapper vc_column-inner">
+          <div class="porto-ibanner porto-ibe-boxshadow">
+            <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/shop3_home_ads2.jpg&quot;}}" class="porto-ibanner-img" />
+            <div class="porto-ibanner-desc no-padding d-flex">
+              <div class="porto-ibanner-layer" style="width: 100%; left: 50%; transform: translateX(-50%); top: 20%;">
+                <h3 style="font-size: 1.625em; line-height: 1; text-align: center;" class="vc_custom_heading mb-0 ls-n-50">Cosmetics Trends</h3>
+                <p style="font-size: 0.9375em; color: #777777; line-height: 1.5; text-align: center;" class="vc_custom_heading mb-4">Browse in all our categories</p>
+                <div class="btn-container mb-0 text-center"><button class="btn btn-modern btn-sm btn-dark">Shop By Glasses</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 col-12">
+        <div class="wpb_wrapper vc_column-inner">
+          <div class="porto-ibanner porto-ibe-boxshadow">
+            <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/shop3_home_ads3.jpg&quot;}}" class="porto-ibanner-img" />
+            <div class="porto-ibanner-desc no-padding d-flex">
+              <div class="porto-ibanner-layer" style="width: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+                <h3 style="font-size: 1.625em; line-height: 1; text-align: center;" class="vc_custom_heading mb-1 ls-n-50 heading-light">Fashion Summer Sale</h3>
+                <p style="font-size: 0.9375em; color: rgba(255, 255, 255, 0.6); line-height: 1.4; text-align: center;" class="vc_custom_heading mb-4">Browse in all our categories</p>
+                <div class="vc_btn3-container mb-0 text-center"><button class="vc_btn3 vc_btn3-shape-default btn btn-modern btn-sm btn-light">Shop By Glasses</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 vc_column_container col-md-6 col-lg-3 col-12">
+        <div class="wpb_wrapper vc_column-inner">
+          <div class="porto-ibanner porto-ibe-boxshadow">
+            <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/03/shop3_home_ads4.jpg&quot;}}" class="porto-ibanner-img" />
+            <div class="porto-ibanner-desc no-padding d-flex">
+              <div class="porto-ibanner-layer layer-border" style="width: 82%; left: 50%; transform: translateX(-50%); bottom: 8%; padding-top: 2.75em; border: 5px solid #222529;">
+                <h3 style="font-size: 1.375em; line-height: 1; text-align: center;" class="vc_custom_heading mb-2 ls-n-50">UP TO 70% IN ALL BAGS</h3>
+                <p style="font-size: 0.9375em; color: #777777; line-height: 1; text-align: center;" class="vc_custom_heading mb-0">Starting at $99</p>
+                <div class="btn-container mb-0 position-relative bottom-50 text-center"><button class="btn btn-modern btn-md btn-dark">Shop By Bags</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="porto-inner-container" style="padding: 65px 0 30px;">
+  <div class="container">
+    <h2 class="section-title slider-title mb-5" style="font-size: 1.125rem;line-height: 1;text-align: center;letter-spacing: -.3px;">
+      <span class="inline-title">POPULAR PRODUCTS</span>
+      <span class="line"></span>
+    </h2>
+    <div class="porto-products">
+      {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="featured_product" product_type="3" product_count="12" column_count="6" aspect_ratio="0" image_width="350" image_height="350" template="grid.phtml"}}
+    </div>
+    <div class="porto-separator taller"><hr class="separator-line  align_center solid" style="background-color:#e7e7e7;"></div>
+    <div class="row mb-4">
+      <div class="col-sm-6 col-md-3">
+        <div class="wpb_wrapper vc_column-inner">
+          <div class="porto-sicon-box px-lg-4 px-xl-5 style_1 top-icon">
+            <div class="porto-sicon-top">
+              <div class="porto-just-icon-wrapper" style="text-align: center;">
+                <div class="porto-icon none" style="color: #222529; font-size: 35px; display: inline-block;"><i class="Simple-Line-Icons-earphones-alt"></i></div>
+              </div>
+            </div>
+            <div class="porto-sicon-header">
+              <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 1.25rem; line-height: 1.4;">CUSTOMER SUPPORT</h3>
+              <p style="font-weight: 600; font-size: 0.875rem; line-height: 1;">Need Assistence?</p>
+            </div>
+            <div class="porto-sicon-description" style="font-size: 0.8125rem; line-height: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapib.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="wpb_wrapper vc_column-inner">
+          <div class="porto-sicon-box px-lg-4 px-xl-5 style_1 top-icon">
+            <div class="porto-sicon-top">
+              <div class="porto-just-icon-wrapper" style="text-align: center;">
+                <div class="porto-icon none" style="color: #222529; font-size: 35px; display: inline-block;"><i class="Simple-Line-Icons-credit-card"></i></div>
+              </div>
+            </div>
+            <div class="porto-sicon-header">
+              <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 1.25rem; line-height: 1.4;">SECURED PAYMENT</h3>
+              <p style="font-weight: 600; font-size: 0.875rem; line-height: 1;">Safe &amp; Fast</p>
+            </div>
+            <div class="porto-sicon-description" style="font-size: 0.8125rem; line-height: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapibus lacus. Lorem ipsum dolor sit amet.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="wpb_wrapper vc_column-inner">
+          <div class="porto-sicon-box px-lg-4 px-xl-5 style_1 top-icon">
+            <div class="porto-sicon-top">
+              <div class="porto-just-icon-wrapper" style="text-align: center;">
+                <div class="porto-icon none" style="color: #222529; font-size: 35px; display: inline-block;"><i class="Simple-Line-Icons-action-undo"></i></div>
+              </div>
+            </div>
+            <div class="porto-sicon-header">
+              <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 1.25rem; line-height: 1.4;">FREE RETURNS</h3>
+              <p style="font-weight: 600; font-size: 0.875rem; line-height: 1;">Easy &amp; Free</p>
+            </div>
+            <div class="porto-sicon-description" style="font-size: 0.8125rem; line-height: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapib.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="wpb_wrapper vc_column-inner">
+          <div class="porto-sicon-box px-lg-4 px-xl-5 style_1 top-icon">
+            <div class="porto-sicon-top">
+              <div class="porto-just-icon-wrapper" style="text-align: center;">
+                <div class="porto-icon none" style="color: #222529; font-size: 35px; display: inline-block;"><i class="porto-icon-shipping"></i></div>
+              </div>
+            </div>
+            <div class="porto-sicon-header">
+              <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 1.25rem; line-height: 1.4;">FREE SHIPPING</h3>
+              <p style="font-weight: 600; font-size: 0.875rem; line-height: 1;">Orders Over $99</p>
+            </div>
+            <div class="porto-sicon-description" style="font-size: 0.8125rem; line-height: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapib.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      html .top-icon .porto-just-icon-wrapper {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </div>
+</div>]]></content>
+            <is_active>1</is_active>
+            <page_layout>1column</page_layout>
+            <layout_update_xml><![CDATA[]]></layout_update_xml>
+        </cms_item>
+        <cms_item>
+            <title>Porto - Homepage 1</title>
+            <identifier>porto_home_1</identifier>
+            <content><![CDATA[<div class="porto-block">
+  <style>
+    @media (min-width: 992px) {
+      .page-header .nav-sections {
+        display: none;
+      }
+    }
+    .vc_custom_1569859408078 {
+      border: 1px solid #e7e7e7;
+    }
+    .header-top-ads .porto-sicon-default .porto-icon {
+      margin-right: 0.5rem;
+    }
+    .header-top-ads .porto-sicon-box {
+      justify-content: center;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      margin: 0.75rem 0;
+      border-right: 1px solid #e7e7e7;
+    }
+    .header-top-ads .col-lg-4:last-child .porto-sicon-box {
+      border: none;
+    }
+    @media (max-width: 991px) {
+      .header-top-ads .porto-sicon-box {
+        border-right: none;
+        justify-content: flex-start;
+        padding: 0.75rem 1.5rem;
+      }
+      .header-top-ads .col-lg-4:not(:last-child) {
+        border-bottom: 1px solid #e7e7e7;
+      }
+    }
+  </style>
+  <div class="container">
+    <div class="row header-top-ads vc_custom_1569859408078 no-padding">
+      <div class="col-md-12 col-lg-4 d-flex justify-content-center flex-column">
+        <div class="wpb_wrapper vc_column-inner">
+          <div class="porto-sicon-box style_1 default-icon">
+            <div class="porto-sicon-default">
+              <div class="porto-just-icon-wrapper" style="text-align: center;">
+                <div class="porto-icon none" style="color: #222529; font-size: 35px; display: inline-block;"><i class="porto-icon-shipping"></i></div>
+              </div>
+            </div>
+            <div class="porto-sicon-header">
+              <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 14px; line-height: 1;">FREE SHIPPING &amp; RETURN</h3>
+              <p style="font-weight: 300; font-size: 13px; line-height: 1.2;">Free shipping on all orders over $99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-4 d-flex justify-content-center flex-column">
+        <div class="wpb_wrapper vc_column-inner">
+          <div class="porto-sicon-box style_1 default-icon">
+            <div class="porto-sicon-default">
+              <div class="porto-just-icon-wrapper" style="text-align: center;">
+                <div class="porto-icon none" style="color: #222529; font-size: 37px; display: inline-block;"><i class="porto-icon-money"></i></div>
+              </div>
+            </div>
+            <div class="porto-sicon-header">
+              <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 14px; line-height: 1;">MONEY BACK GUARANTEE</h3>
+              <p style="font-weight: 300; font-size: 13px; line-height: 1.2;">100% money back guarantee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-4 d-flex justify-content-center flex-column">
+        <div class="wpb_wrapper vc_column-inner">
+          <div class="porto-sicon-box style_1 default-icon">
+            <div class="porto-sicon-default">
+              <div class="porto-just-icon-wrapper" style="text-align: center;">
+                <div class="porto-icon none" style="color: #222529; font-size: 37px; display: inline-block;"><i class="porto-icon-support"></i></div>
+              </div>
+            </div>
+            <div class="porto-sicon-header">
+              <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 14px; line-height: 1;">ONLINE SUPPORT 24/7</h3>
+              <p style="font-weight: 300; font-size: 13px; line-height: 1.2;">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-content-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 porto-home-sidebar" style="margin-top: 20px;margin-bottom:10px;">
+        <div class="sidebar-content">
+          <div class="widget_sidebar_menu main-sidebar-menu">
+            <div class="widget-title">Browse Categories</div>
+            <div class="sidebar-menu-wrap" style="margin-bottom: -1px;">
+              {{block class="Smartwave\Megamenu\Block\Topmenu" name="sw.sidenav" template="Smartwave_Megamenu::sidemenu.phtml" ttl="3600"}}
+            </div>
+          </div>
+          <div class="widget widget-block" style="margin-top: 20px;">
+            <div class="porto-block">
+              <style>
+                .info-box-small-wrap {
+                  padding: 0 30px 10px;
+                }
+                .info-box-small-wrap .porto-sicon-top {
+                  position: relative;
+                  padding-top: 25px;
+                }
+                .info-box-small-wrap .custom-info-1 .porto-sicon-top:before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  height: 25px;
+                  left: 50%;
+                  border-left: 1px solid #e7e7e7;
+                }
+                .info-box-small-wrap .porto-sicon-header .porto-sicon-title {
+                  font-family: "Poppins";
+                  position: relative;
+                  display: inline-block;
+                }
+                .info-box-small-wrap .porto-sicon-description {
+                  font-family: "Poppins";
+                  position: relative;
+                }
+                .info-box-small-wrap .porto-sicon-title sup {
+                  font-weight: 700;
+                  font-size: 60%;
+                  letter-spacing: normal;
+                }
+                .info-box-small-wrap .porto-sicon-title sub {
+                  font-family: "Poppins";
+                  font-size: 16px;
+                  text-transform: uppercase;
+                  font-weight: 700;
+                  position: absolute;
+                  right: 0;
+                  bottom: 7px;
+                  line-height: 1.4em;
+                  letter-spacing: normal;
+                }
+                .info-box-small-wrap .porto-sicon-title small,
+                .info-box-small-wrap .porto-sicon-description small {
+                  position: absolute;
+                  left: -21px;
+                  bottom: 32px;
+                  font-size: 10px;
+                  font-family: "Open Sans";
+                  font-weight: 700;
+                  color: #777;
+                  opacity: 0.6;
+                  transform: rotateZ(-90deg);
+                  letter-spacing: normal;
+                }
+                .info-box-small-wrap .porto-sicon-description small {
+                  left: 26px;
+                  top: 2px;
+                  height: 25px;
+                }
+                .porto-sicon-read span {
+                  display: none;
+                }
+                .porto-sicon-box .porto-sicon-read {
+                  display: inline-block;
+                  text-decoration: none !important;
+                  font-size: 0.8125rem;
+                  font-weight: 700;
+                  color: #fff !important;
+                  background: #222529;
+                  padding: 0.75em 2.25em;
+                  margin-top: 1rem;
+                  letter-spacing: 0;
+                }
+                .info-box-small-wrap .porto-sicon-box {
+                  margin-bottom: 0.5rem;
+                }
+                .custom-rotate-1 {
+                  display: inline-block;
+                  transform: rotate(-2deg);
+                }
+                .custom-info-2 .porto-sicon-top {
+                  margin-top: 35px;
+                }
+                .custom-info-2 .porto-sicon-header {
+                  position: absolute;
+                  top: 16px;
+                  white-space: nowrap;
+                }
+                .custom-info-2 .porto-sicon-description small {
+                  left: 33px;
+                }
+                .custom-info-2 .coupon-sale-text b,
+                .custom-open-sans .coupon-sale-text b {
+                  font-weight: 700;
+                }
+                .custom-info-2 h4,
+                .custom-info-2 strong,
+                .custom-open-sans h4,
+                .custom-open-sans strong {
+                  font-family: "Open Sans";
+                }
+              </style>
+              <div class="info-box-small-wrap" style="border: 1px solid #e7e7e7; border-radius: 2px;">
+                <div class="porto-carousel owl-carousel dots-style-1 mb-4 pb-1">
+                  <div class="porto-sicon-box custom-info-1 style_1 top-icon">
+                    <div class="porto-sicon-top">
+                      <div class="porto-just-icon-wrapper" style="text-align: center;">
+                        <div class="porto-sicon-img" style="display: inline-block; font-size: 113px;">
+                          <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/01/shop1_off.png&quot;}}" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="porto-sicon-header">
+                      <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 70px; line-height: 1; letter-spacing: -0.05em;"><small>UP TO</small>50<sup>%</sup><sub>off</sub></h3>
+                    </div>
+                    <div class="porto-sicon-description" style="letter-spacing: -0.025em;">
+                      Bags, Clothing, T-Shirts, Shoes, Watches and much more...<a class="porto-sicon-read" href="#">VIEW SALE<span>&nbsp;»</span></a>
+                    </div>
+                  </div>
+                  <div class="porto-sicon-box custom-open-sans style_1 top-icon">
+                    <div class="porto-sicon-top">
+                      <div class="porto-just-icon-wrapper" style="text-align: center; margin-bottom: 30px;">
+                        <div class="porto-sicon-img" style="display: inline-block; font-size: 166px;">
+                          <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/01/shop1_off2.jpg&quot;}}" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="porto-sicon-header">
+                      <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 20px; line-height: 1;">DRONE + CAMERAS</h3>
+                    </div>
+                    <div class="porto-sicon-description">
+                      <small class="pr-2">UP TO</small>
+                      <h4 class="vc_custom_heading coupon-sale-text d-inline-block background-color-dark align-left heading-light py-1"><b class="font-weight-semibold">$100</b></h4>
+                      <strong class="text-dark text-md custom-rotate-1">OFF</strong>
+                      <div class="mb-2">Top Brands and Models!</div>
+                      <a class="porto-sicon-read" href="#">VIEW SALE</a>
+                    </div>
+                  </div>
+                  <div class="porto-sicon-box custom-info-2 style_1 top-icon">
+                    <div class="porto-sicon-top">
+                      <div class="porto-just-icon-wrapper" style="text-align: center;">
+                        <div class="porto-sicon-img" style="display: inline-block; font-size: 163px;">
+                          <img src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/01/shop1_off3.jpg&quot;}}" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="porto-sicon-header">
+                      <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 13px; line-height: 1; letter-spacing: 0.5em; color: #777777;">HEADPHONES SALE</h3>
+                    </div>
+                    <div class="porto-sicon-description" style="">
+                      <small class="pr-2">UP TO</small>
+                      <h4 class="vc_custom_heading coupon-sale-text d-inline-block background-color-secondary align-left heading-light py-1 ml-3 mr-2 mb-1"><b class="font-weight-semibold">50%</b></h4>
+                      <strong class="text-dark text-md custom-rotate-1">OFF</strong><a class="porto-sicon-read" href="#">VIEW SALE</a>
+                    </div>
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  require([
+                    'jquery',
+                    'owl.carousel/owl.carousel.min'
+                  ], function ($) {
+                    $(".info-box-small-wrap .owl-carousel").owlCarousel({
+                      items: 1,
+                      autoplay: false,
+                      autoplayTimeout: 5000,
+                      autoplayHoverPause: true,
+                      dots: true,
+                      nav: false,
+                      loop: false,
+                      navRewind: true,
+                      margin: 1
+                    });
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+          <div class="widget widget_text">
+            <div class="box-newsletter text-center">
+              <div class="box-content pb-3 px-4">
+                <h4 class="widget-title">Subscribe Newsletter</h4>
+                <div class="content-form">
+                  <p style="font-size: .8125rem">Get all the latest information on Events, Sales and Offers.</p>
+                  {{block class="Magento\Newsletter\Block\Subscribe" name="home.newsletter" template="subscribe_form.phtml"}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="widget widget-block">
+            <div class="sidebar-testimonials" style="border: 3px solid #0188cc;border-radius: 2px;">
+              <div class="porto-carousel owl-carousel sidebar-testimonial m-b-xl nav-inside dots-style-1 nav-inside-left ">
+                <div class="porto-testimonial">
+                  <div class="testimonial testimonial-style-4 testimonial-no-borders">
+                    <div class="testimonial-author clearfix">
+                      <div class="testimonial-author-thumbnail">
+                        <img class="img-responsive img-circle" src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/01/shop2_about_us_person1.jpg&quot;}}" alt="John Smith" />
+                      </div>
+                      <p><strong style="color: #222529;">John Smith</strong><span>CEO &amp; Founder</span></p>
+                    </div>
+                    <div class="testimonial-arrow-down"></div>
+                    <blockquote style="color: #777;"><p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat mi.</p></blockquote>
+                  </div>
+                </div>
+                <div class="porto-testimonial">
+                  <div class="testimonial testimonial-style-4 testimonial-no-borders">
+                    <div class="testimonial-author clearfix">
+                      <div class="testimonial-author-thumbnail"><img class="img-responsive img-circle" src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/01/client-2.jpg&quot;}}" alt="JOHN SMITH" /></div>
+                      <p><strong>JOHN SMITH</strong><span>CEO &amp; Founder</span></p>
+                    </div>
+                    <div class="testimonial-arrow-down"></div>
+                    <blockquote style="color: #62615e;"><p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat mi.</p></blockquote>
+                  </div>
+                </div>
+                <div class="porto-testimonial">
+                  <div class="testimonial testimonial-style-4 testimonial-no-borders">
+                    <div class="testimonial-author clearfix">
+                      <div class="testimonial-author-thumbnail">
+                        <img class="img-responsive img-circle" src="{{media url=&quot;wysiwyg/smartwave/porto/homepage/01/shop1_testimonial1.jpg&quot;}}" alt="JOHN SMITH" />
+                      </div>
+                      <p><strong>JOHN SMITH</strong><span>CEO &amp; Founder</span></p>
+                    </div>
+                    <div class="testimonial-arrow-down"></div>
+                    <blockquote style="color: #3a3a3a;"><p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat mi.</p></blockquote>
+                  </div>
+                </div>
+              </div>
+              <script type="text/javascript">
+                require([
+                  'jquery',
+                  'owl.carousel/owl.carousel.min'
+                ], function ($) {
+                  $(".sidebar-testimonials .owl-carousel").owlCarousel({
+                    items: 1,
+                    autoplay: false,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    dots: true,
+                    nav: false,
+                    loop: false,
+                    navRewind: true,
+                    margin: 1
+                  });
+                });
+              </script>
+            </div>
+          </div>
+          <div class="widget widget-block">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="porto-recent-posts m-b-n">
+                  <div class="row">
+                    <div class="post-carousel porto-carousel owl-carousel dots-style-1">
+                      {{widget type="Magefan\Blog\Block\Widget\Recent" number_of_posts="4" custom_template="recent_home.phtml"}}
+                    </div>
+                  </div>
+                  <script type="text/javascript">
+                    require([
+                      'jquery',
+                      'owl.carousel/owl.carousel.min'
+                    ], function ($) {
+                      $(".porto-recent-posts .owl-carousel").owlCarousel({
+                        items: 1,
+                        autoplay: false,
+                        autoplayTimeout: 5000,
+                        autoplayHoverPause: true,
+                        dots: true,
+                        nav: false,
+                        loop: true,
+                        navRewind: true
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content col-lg-9" style="margin-top:20px;">
+        <div class="home-banner-slider" style="margin-bottom: 20px;">
+          <div class="porto-carousel owl-carousel dots-style-1 mb-0 nav-inside nav-inside-left">
+            <div class="porto-ultimate-content-box-container">
+              <div class="porto-ultimate-content-box has-content-pos justify-content-center" style="background-size: cover; background-repeat: no-repeat; background-position: center center; background-color: rgba(0, 0, 0, 0); min-height: 428px; background-image: url('{{media url="wysiwyg/smartwave/porto/homepage/01/shop1_home_slider1.png"}}');padding-top: 20px;padding-bottom: 20px;padding-left: 5.5%;background-color: #0088cc;">
+                <h4 style="font-size: 1.54em; color: rgba(255, 255, 255, 0.7); line-height: 1; font-weight: 500;" class="vc_custom_heading ls-80 align-left">Find the Boundaries. Push Through!</h4>
+                <h2 style="font-size: 4.375em; line-height: 1; font-weight: 700; letter-spacing: 0.1px;" class="vc_custom_heading mb-0 align-left heading-light">Summer Sale</h2>
+                <h3 style="font-size: 7.6em; line-height: 1; font-weight: 700;" class="vc_custom_heading mb-3 align-left heading-light">70% OFF</h3>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="wpb_wrapper vc_column-inner">
+                      <h4 style="font-size: 1.1em; line-height: 1; font-weight: 600;" class="vc_custom_heading mr-3 pull-left p-t-sm ls-n-20 align-left text-uppercase heading-light">Starting At</h4>
+                      <h4 style="font-size: 1.5em; line-height: 1;" class="vc_custom_heading coupon-sale-text d-inline-block mr-2 background-color-secondary align-left heading-light">
+                        <b><sup>$</sup>199<sup>99</sup></b>
+                      </h4>
+                      <div class="btn-container mb-0 d-inline-block" style="margin-left: -3px;"><button class="btn btn-modern btn-md btn-dark">Shop Now!</button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="porto-ultimate-content-box-container">
+              <div class="porto-ultimate-content-box has-content-pos justify-content-center" style="background-size: cover; background-repeat: no-repeat; background-position: center center; background-color: rgba(0, 0, 0, 0); min-height: 428px; background-image: url('{{media url="wysiwyg/smartwave/porto/homepage/01/shop1_home_slider2.jpg"}}');padding-top: 20px;padding-bottom: 20px;padding-left: 5.5%;background-color: #dadada;">
+                <h4 style="font-size: 1.6em; color: rgba(119, 119, 119, 0.7); line-height: 1; font-weight: 500;" class="vc_custom_heading ls-80 mb-2 align-left">OVER 200 PRODUCTS WITH DISCOUNTS</h4>
+                <h3 style="font-size: 5.5em; line-height: 1; font-weight: 700;" class="vc_custom_heading mb-3 align-left heading-dark">GREAT DEALS</h3>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="wpb_wrapper vc_column-inner">
+                      <h4 style="font-size: 1.4em; line-height: 1.5; font-weight: 700;" class="vc_custom_heading mr-2 pull-left align-left text-uppercase heading-dark">Starting At</h4>
+                      <h4 style="font-size: 2.6em; line-height: 1;" class="vc_custom_heading pull-left m-r-lg align-left heading-dark">
+                        <b><sup>$</sup>299<sup>99</sup></b>
+                      </h4>
+                      <div class="btn-container mb-0 d-inline-block" style="margin-left:-3px;"><button class="btn btn-modern btn-md btn-dark">Get Yours!</button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="porto-ultimate-content-box-container">
+              <div class="porto-ultimate-content-box has-content-pos justify-content-center" style="background-size: cover; background-repeat: no-repeat; background-position: center center; background-color: rgba(0, 0, 0, 0); min-height: 428px; background-image: url('{{media url="wysiwyg/smartwave/porto/homepage/01/shop1_home_slider3.jpg"}}');padding-top: 20px;padding-bottom: 20px;padding-left: 5.5%;background-color: #e6e3e2;">
+                <h4 style="font-size: 1.6em; color: rgba(119, 119, 119, 0.7); line-height: 1; font-weight: 500;" class="vc_custom_heading ls-80 mb-2 align-left">UP TO 70% OFF</h4>
+                <h3 style="font-size: 4.8em; line-height: 1; font-weight: 700;" class="vc_custom_heading mb-3 align-left heading-dark">NEW ARRIVALS</h3>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="wpb_wrapper vc_column-inner">
+                      <h4 style="font-size: 1.4em; line-height: 1.5; font-weight: 700;" class="vc_custom_heading mr-2 pull-left ls-n-20 align-left text-uppercase heading-dark">Starting At</h4>
+                      <h4 style="font-size: 2.6em; line-height: 1;" class="vc_custom_heading pull-left m-r-lg align-left heading-dark">
+                        <b><sup>$</sup>299<sup>99</sup></b>
+                      </h4>
+                      <div class="btn-container mb-0 d-inline-block" style="margin-left:-3px;"><button class="btn btn-modern btn-md btn-dark">Get Yours!</button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">
+            require([
+              'jquery',
+              'owl.carousel/owl.carousel.min'
+            ], function ($) {
+              var banner_owl = $(".home-banner-slider .owl-carousel");
+              banner_owl.owlCarousel({
+                items: 1,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                dots: true,
+                nav: false,
+                navRewind: true,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                loop: true,
+                lazyLoad: true
+              });
+            });
+          </script>
+          <style>
+            .owl-carousel.nav-inside-left .owl-dots {
+              left: 5.5%;
+              bottom: 2rem;
+            }
+            .home-banner-slider .owl-carousel .owl-dots .owl-dot span {
+              color: #222529!important;
+              border-color: #222529;
+            }
+          </style>
+        </div>
+        <div class="home-ads mb-2">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="porto-ultimate-content-box-container" >
+                <div class="porto-ultimate-content-box vc_custom_1595216969075 has-content-pos justify-content-center"
+                     style="background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-color: rgba(0, 0, 0, 0);
+                            min-height: 170px;
+                            background-image: url('{{media url="wysiwyg/smartwave/porto/homepage/01/shop1_home_ads1.jpg"}}');">
+                  <h3 style="font-size: 1.5rem; line-height: 1;" class="vc_custom_heading mb-2 align-left">Porto Watches</h3>
+                  <h4 style="font-size: 1.8125rem; line-height: 1; font-weight: 800;" class="vc_custom_heading mb-4 align-left heading-primary">
+                    <sup><del><b>20%</b></del></sup>30%<sup>OFF</sup>
+                  </h4>
+                  <div class="btn-container mb-0 d-inline-block"><button class="btn btn-flat btn-md btn-light">Shop Now</button></div>
+                </div>
+              </div>
+              <style>
+                .vc_custom_1595216969075 {
+                  margin-bottom: 20px;
+                  padding-top: 1.25rem;
+                  padding-bottom: 1.25rem;
+                  padding-left: 1.25rem;
+                  background-color: #f4f4f4;
+                }
+              </style>
+            </div>
+            <div class="home-ads2 col-md-4">
+              <div class="porto-ultimate-content-box-container">
+                <div class="porto-ultimate-content-box vc_custom_1595216625670 has-content-pos justify-content-center"
+                     style="background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-color: rgba(0, 0, 0, 0);
+                            min-height: 170px;
+                            background-image: url('{{media url="wysiwyg/smartwave/porto/homepage/01/shop1_home_ads2.jpg"}}');">
+                  <h3 style="font-size: 1.25rem; line-height: 1.35; text-align: center;" class="vc_custom_heading mb-0 ls-n-20">DEAL PROMOS</h3>
+                  <h4 style="font-size: 0.875rem; color: #777777; line-height: 1; text-align: center; font-weight: 600;" class="vc_custom_heading mb-4 text-uppercase">STARTING AT $99</h4>
+                  <div class="btn-container mb-0 text-center"><button class="btn btn-flat btn-md btn-light">Shop Now</button></div>
+                </div>
+              </div>
+              <style>
+                .vc_custom_1595216625670 {
+                  margin-bottom: 20px;
+                  border: 0.875rem solid #e7e7e7;
+                  padding-top: 1rem;
+                  padding-bottom: .5rem;
+                  background-color: #f4f4f4;
+                }
+              </style>
+            </div>
+            <div class="col-md-4">
+              <div class="porto-ultimate-content-box-container">
+                <div class="porto-ultimate-content-box vc_custom_1595216973929 has-content-pos justify-content-center "
+                     style="background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-color: rgba(0, 0, 0, 0);
+                            min-height: 170px;
+                            background-image: url('{{media url="wysiwyg/smartwave/porto/homepage/01/shop1_home_ads3.jpg"}}');">
+                  <h3 style="font-size: 1.5rem; line-height: 1;" class="vc_custom_heading mb-2 align-right">Handbags</h3>
+                  <h4 style="font-size: 0.9375rem; line-height: 1.4; font-weight: 600;" class="vc_custom_heading mb-4 pb-2 align-right heading-secondary">STARTING AT $99</h4>
+                  <div class="btn-container mb-0 text-right"><button class="btn btn-flat btn-md btn-light">Shop Now</button></div>
+                </div>
+              </div>
+              <style>
+                .vc_custom_1595216973929 {
+                  margin-bottom: 20px;
+                  padding-top: 1.6rem;
+                  padding-right: 1rem;
+                  padding-bottom: 1.6rem;
+                  background-color: #f4f4f4;
+                }
+              </style>
+            </div>
+          </div>
+          <style>
+            .home-ads sup {
+              font-size: 70%;
+              top: -.3em;
+              font-weight: 700;
+              margin-right: 2px;
+            }
+          </style>
+        </div>
+        <div id="featured-products" class="porto-products title-border-bottom mb-4">
+          <h2 class="section-title slider-title"><span class="inline-title">Featured Products</span><span class="line"></span></h2>
+          <div class="slider-wrapper">
+            {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured_product" extra_class="show-dots-title-right dots-style-1" product_count="8" aspect_ratio="0" image_width="350" image_height="350" template="owl_list.phtml"}}
+            <script type="text/javascript">
+              require([
+                'jquery',
+                'owl.carousel/owl.carousel.min'
+              ], function ($) {
+                $("#featured-products .owl-carousel").owlCarousel({
+                  autoplay: false,
+                  autoplayTimeout: 5000,
+                  autoplayHoverPause: true,
+                  loop: true,
+                  navRewind: true,
+                  lazyLoad:true,
+                  margin: 0,
+                  nav: false,
+                  dots: true,
+                  responsive: {
+                    0: {
+                      items:2
+                    },
+                    640: {
+                      items:3
+                    },
+                    768: {
+                      items:3
+                    },
+                    992: {
+                      items:4
+                    },
+                    1200: {
+                      items:4
+                    }
+                  }
+                });
+              });
+            </script>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="porto-brand mb-4" style="border-top: 1px solid #e7e7e7;border-bottom: 1px solid #e7e7e7;padding-top: 2rem;padding-bottom:2rem;">
+              <div class="porto-carousel brand-carousel owl-carousel mb-0">
+                <div class="item"><img src="{{media url="wysiwyg/smartwave/porto/brands/new_brand1.png"}}" alt="" /></div>
+                <div class="item"><img src="{{media url="wysiwyg/smartwave/porto/brands/new_brand2.png"}}" alt="" /></div>
+                <div class="item"><img src="{{media url="wysiwyg/smartwave/porto/brands/new_brand3.png"}}" alt="" /></div>
+                <div class="item"><img src="{{media url="wysiwyg/smartwave/porto/brands/new_brand4.png"}}" alt="" /></div>
+                <div class="item"><img src="{{media url="wysiwyg/smartwave/porto/brands/new_brand5.png"}}" alt="" /></div>
+                <div class="item"><img src="{{media url="wysiwyg/smartwave/porto/brands/new_brand6.png"}}" alt="" /></div>
+              </div>
+              <script type="text/javascript">
+                require(["jquery", "owl.carousel/owl.carousel.min"], function ($) {
+                  $(".brand-carousel.owl-carousel").owlCarousel({
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    nav: false,
+                    dots: false,
+                    loop: true,
+                    responsive: {
+                      0: {
+                        items: 2,
+                      },
+                      640: {
+                        items: 3,
+                      },
+                      768: {
+                        items: 4,
+                      },
+                      992: {
+                        items: 5,
+                      },
+                      1200: {
+                        items: 5,
+                      },
+                    },
+                  });
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2 mb-1">
+          <div class="col-sm-6 col-md-4">
+            <div class="mgt_content_element">
+              <div class="widget widget_products">
+                <h2 class="widgettitle">Top Rated Products</h2>
+                {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured_product" product_count="3" aspect_ratio="0" image_width="150" image_height="150" template="small_list.phtml"}}
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 vc_column_container col-md-4">
+            <div class="mgt_content_element">
+              <div class="widget widget_products">
+                <h2 class="widgettitle">Best Selling Products</h2>
+                {{block class="Smartwave\Filterproducts\Block\Home\BestsellersList" name="featured_product" product_count="3" aspect_ratio="0" image_width="150" image_height="150" template="small_list.phtml"}}
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 vc_column_container col-md-4">
+            <div class="mgt_content_element">
+              <div class="widget widget_products">
+                <h2 class="widgettitle">Latest Products</h2>
+                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="featured_product" product_count="3" aspect_ratio="0" image_width="150" image_height="150" template="small_list.phtml"}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <div class="porto-separator"><hr class="separator-line align_center solid" style="background-color: #e7e7e7;" /></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="porto-sicon-box px-2 style_1 top-icon">
+              <div class="porto-sicon-top">
+                <div class="porto-just-icon-wrapper" style="text-align: center;">
+                  <div class="porto-icon advanced" style="color: #0188cc; background: transparent; border-style: solid; border-color: #0188cc; border-width: 2px; width: 80px; height: 80px; line-height: 80px; border-radius: 500px; font-size: 35px; display: inline-block;">
+                    <i class="Simple-Line-Icons-earphones-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="porto-sicon-header">
+                <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 1rem; line-height: 1.2;">CUSTOMER SUPPORT</h3>
+                <p style="line-height: 1.4; color: #555555;">Need Assistence?</p>
+              </div>
+              <div class="porto-sicon-description" style="font-size: 0.8125rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapib.</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="porto-sicon-box px-2 style_1 top-icon">
+              <div class="porto-sicon-top">
+                <div class="porto-just-icon-wrapper" style="text-align: center;">
+                  <div class="porto-icon advanced" style="color: #0188cc; background: transparent; border-style: solid; border-color: #0188cc; border-width: 2px; width: 80px; height: 80px; line-height: 80px; border-radius: 500px; font-size: 35px; display: inline-block;">
+                    <i class="Simple-Line-Icons-credit-card"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="porto-sicon-header">
+                <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 1rem; line-height: 1.2;">SECURED PAYMENT</h3>
+                <p style="line-height: 1.4; color: #555555;">Safe &amp; Fast</p>
+              </div>
+              <div class="porto-sicon-description" style="font-size: 0.8125rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapib.</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="porto-sicon-box px-2 style_1 top-icon">
+              <div class="porto-sicon-top">
+                <div class="porto-just-icon-wrapper" style="text-align: center;">
+                  <div class="porto-icon advanced" style="color: #0188cc; background: transparent; border-style: solid; border-color: #0188cc; border-width: 2px; width: 80px; height: 80px; line-height: 80px; border-radius: 500px; font-size: 35px; display: inline-block;">
+                    <i class="Simple-Line-Icons-action-undo"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="porto-sicon-header">
+                <h3 class="porto-sicon-title" style="font-weight: 700; font-size: 1rem; line-height: 1.2;">RETURNS</h3>
+                <p style="line-height: 1.4; color: #555555;">Easy &amp; Free</p>
+              </div>
+              <div class="porto-sicon-description" style="font-size: 0.8125rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapib.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        @media(max-width:991px){
+          .porto-home-sidebar {order:2;}
+          .main-content {order:1;}
+        }
+      </style>
+    </div>
+  </div>
+</div>
+]]></content>
+            <is_active>1</is_active>
+            <page_layout>1column</page_layout>
+        </cms_item>
+    </pages>
+</root>

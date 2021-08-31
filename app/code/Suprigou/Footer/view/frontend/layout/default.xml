@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <link src="Suprigou_Theme::js/jquery-1.11.3.min.js"/>
+        <css src="Suprigou_Theme::css/bootstrap.min.css"/>
+        <link src="Suprigou_Theme::js/bootstrap.min.js"/>
+        <css src="Suprigou_Footer::css/footer.css"/>
+        <link src="Suprigou_Footer::js/footer.js"/>
+    </head>
+    <body>
+        <referenceContainer name="suprigou.frontend.footer">
+            <container name="suprigou.frontend.footer.all" label="Page Footer All" htmlTag="div" htmlClass="suprigou_footer">
+                <block name="suprigou.frontend.footer.shopcart" template="Suprigou_Footer::shopcart.phtml">
+                </block>
+                <block name="suprigou.frontend.footer.thumbnail" template="Suprigou_Footer::thumbnail.phtml">
+                </block>
+                <block name="suprigou.frontend.footer.checkout" template="Suprigou_Footer::checkout.phtml">
+                </block>
+            </container>
+        </referenceContainer>
+    </body>
+</page>
