@@ -9,7 +9,8 @@
     </head>
     <body>
         <referenceContainer name="suprigou.frontend.main" label="Page main" htmlTag="div" htmlClass="row">
-            <block name="suprigou.frontend.main.home" template="Suprigou_Main::home.phtml"></block>
+            <!-- <block name="suprigou.frontend.main.home" template="Suprigou_Main::home.phtml"></block> -->
+            <block class="Smartwave\Filterproducts\Block\Home\LatestList" name="featured_product" product_type="3" product_count="12" column_count="1" aspect_ratio="0" image_width="350" image_height="350" template="Smartwave_Porto::ajaxproducts/grid.phtml"/>
         </referenceContainer>
     </body>
 </page>
